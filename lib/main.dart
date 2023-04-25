@@ -153,7 +153,7 @@ class HomePage extends StatelessWidget {
               height: 30.0,
             ),
             Container(
-              height: 200,
+              height: 220,
               width: double.infinity,
               child: ListView(
                 padding: EdgeInsets.only(bottom: 20, left: 20),
@@ -165,7 +165,7 @@ class HomePage extends StatelessWidget {
                       endColor: Color.fromRGBO(251, 53, 105, 1),
                       image: 'assets/socks-one.png'),
                   SizedBox(
-                    width: 10,
+                    width: 50,
                   ),
                   makeCard(
                       context: context,

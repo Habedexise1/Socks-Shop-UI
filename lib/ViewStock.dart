@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -29,7 +31,9 @@ class ViewStocks extends StatelessWidget {
               ),
               child: Transform.translate(
                 offset: Offset(30, -30),
-                child: Image.asset('assets/details-page-header.png',),
+                child: Image.asset(
+                  'assets/details-page-header.png',
+                ),
               ),
             ),
           ),
@@ -191,6 +195,7 @@ class ViewStocks extends StatelessWidget {
                           AspectRatio(
                             aspectRatio: 3.2 / 1,
                             child: Container(
+                              width: 60,
                               padding: EdgeInsets.all(13),
                               margin: EdgeInsets.only(left: 20),
                               decoration: BoxDecoration(
@@ -200,7 +205,7 @@ class ViewStocks extends StatelessWidget {
                               child: Row(
                                 children: <Widget>[
                                   Container(
-                                    width: 56,
+                                    width: 60,
                                     padding: EdgeInsets.all(10),
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(10),
@@ -218,7 +223,7 @@ class ViewStocks extends StatelessWidget {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: <Widget>[
                                       Text(
-                                        'Quarter Length Scocks',
+                                        'Quarter  Scocks',
                                         style: TextStyle(
                                             color:
                                                 Color.fromRGBO(97, 90, 90, 1),
